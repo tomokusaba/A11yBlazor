@@ -1,0 +1,43 @@
+# Build output
+bin/
+obj/
+artifacts/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# IDE and editor files
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Test and coverage output
+TestResults/
+coverage/
+coverage-*/
+*.coverage
+*.coveragexml
+*.trx
+
+# .NET tooling and generated local files
+*.binlog
+*.pidb
+*.svclog
+*.log
+launchSettings.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini

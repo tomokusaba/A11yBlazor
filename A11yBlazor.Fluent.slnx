@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src\A11yBlazor.Fluent\A11yBlazor.Fluent.csproj" />
+  <Project Path="tests\A11yBlazor.Fluent.Tests\A11yBlazor.Fluent.Tests.csproj" />
+</Solution>

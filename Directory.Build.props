@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <FluentUIBlazorVersion>5.0.1</FluentUIBlazorVersion>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0;net11.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>A11yBlazor.Fluent</PackageId>
+    <AssemblyName>A11yBlazor.Fluent</AssemblyName>
+    <RootNamespace>A11yBlazor.Fluent</RootNamespace>
+    <Version>0.1.0</Version>
+    <Authors>A11yBlazor contributors</Authors>
+    <Description>Unofficial WCAG 2.1 AA-oriented accessibility contracts for components based on Fluent UI Blazor.</Description>
+    <PackageTags>blazor;fluentui;accessibility;a11y;wcag</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.FluentUI.AspNetCore.Components" Version="$(FluentUIBlazorVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Validation" Version="11.0.0"
+                      Condition="'$(TargetFramework)' == 'net11.0'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
